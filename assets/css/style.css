@@ -1,0 +1,345 @@
+ * {
+     font-family: "Montserrat", sans-serif;
+     font-style: normal;
+     /* text-box-trim: trim-start; */
+
+     color: #fff;
+     margin: 0;
+     padding: 0;
+ }
+
+ body {
+     margin: 0 auto;
+     font-weight: 300;
+     font-size: clamp(16px, 1.5625vw, 26px);
+     line-height: 34px;
+     letter-spacing: normal;
+     background-color: #000000;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5 {
+     color: #F8A71D;
+ }
+
+ h1 {
+     font-weight: 500;
+     font-size: 85px;
+     line-height: 100%;
+     text-transform: uppercase;
+ }
+
+ h1 strong {
+     font-weight: 800;
+     color: #F8A71D;
+ }
+
+ h3{
+font-weight: 300;
+font-size: 61px;
+line-height: 100%;
+letter-spacing: normal;
+text-transform: uppercase;
+ }
+ h3 strong{
+font-weight: 700;
+color: #F8A71D;
+ }
+ p {
+     font-weight: 300;
+     font-size: 26px;
+     line-height: 34px;
+     letter-spacing: normal;
+     color: #FFFFFF;
+     margin-bottom: 35px;
+
+ }
+
+ p .highLight {
+     font-family: "Roboto", sans-serif;
+     font-weight: 400;
+
+ }
+
+ /* nav start */
+ nav {
+     flex-direction: row;
+     background: linear-gradient(178.53deg, #101010 1.48%, rgba(28, 28, 29, 0) 110.87%);
+ }
+
+ .navbar-nav .nav-link,
+ .footer .nav-link {
+     color: #fff;
+ }
+
+ .navbar-nav .nav-link.active,
+ .navbar-nav .nav-link:active,
+ .navbar-nav .nav-link:hover,
+ .navbar-nav .nav-link:focus {
+     color: #D0A459;
+ }
+
+ .navbar .rpContainer {
+     display: flex;
+ }
+
+ .navbar-brand img,
+ .footer .footer-brand img {
+     width: 200px;
+     height: 85px;
+ }
+
+ .navbar-nav {
+     margin-left: 160px;
+ }
+
+ .navbar-nav .nav-item .nav-link {
+     padding: 0 45px;
+     font-weight: 300;
+     font-size: 18px;
+     line-height: 100%;
+     letter-spacing: 0%;
+ }
+
+ .navbar-nav .nav-item:first-child .nav-link {
+     padding-left: 0;
+ }
+
+ .navbar-nav .nav-item:last-child .nav-link {
+     padding-right: 0;
+ }
+
+ /* nav end */
+
+ /* hero banner */
+ .heroBanner {
+     padding-top: 244px;
+     padding-bottom: 150px;
+     margin-top: 85px;
+ }
+
+ .heroVideo {
+     width: 1162px;
+     max-height: 595px;
+     background-image: url('/assets/images/videobg.jpg');
+     border-radius: 18px;
+     border: 1.5px solid #D0A459;
+     box-shadow:
+         0px -2.05px 0px 0px #E6CD7804,
+         0px 1.82px 0.34px 0px #E6CD780A,
+         0px 10.46px 14.9px 0px #E6CD7815,
+         0px 17px 75px 0px #E6CD7829;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+ }
+
+ /* hero end */
+
+ /* bio start */
+ .bio {
+     padding-bottom: 110px;
+ }
+
+ .bio .rpContainer {
+     display: flex;
+     flex-direction: row;
+ }
+
+ .bio .bioImg {
+     width: 50%;
+     height: 624px;
+     background-image: url('/assets/images/RajatPatel.png');
+     border-radius: 18px;
+     border-width: 1.5px;
+     border: 1.5px solid #D0A459;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+ }
+
+ .bio .bioContent {
+     width: 50%;
+     margin-left: 152px;
+     margin-top: 63px;
+ }
+
+ .bio .cta .btn {
+     min-width: 164px;
+ }
+
+ .bio .cta .btn:first-child {
+     margin-left: 0;
+ }
+
+ .bio .cta .btn:last-child {
+     margin-right: 0;
+ }
+
+ /* bio end */
+
+ /* award start */
+ .award {
+     padding: 95px 0;
+     background:
+         linear-gradient(178.53deg, #101010 1.48%, rgba(28, 28, 29, 0) 110.87%),
+         url('/assets/images/awardBg.png');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-color: #000000;
+ }
+
+ .award .rpContainer {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+ }
+
+ .award-list {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 69px;
+     list-style: none;
+     padding: 0;
+ }
+
+ .award-list .laurel {
+     width: 175px;
+     height: 164px;
+     overflow: hidden;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .award-list .laurel img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+ /* award end */
+
+ /* buttons start */
+ .btn {
+     font-weight: 400;
+     font-size: clamp(13px, 1.5625vw, 16px);
+     line-height: 28px;
+     letter-spacing: normal;
+     border-radius: 50px;
+     box-shadow:
+         0px -2.05px 0px 0px #E6CD7804,
+         0px 1.82px 0.34px 0px #E6CD780A,
+         0px 10.46px 14.9px 0px #E6CD7815,
+         0px 17px 75px 0px #E6CD7829;
+     margin: 0 25px;
+
+ }
+
+ .btnOutline {
+     border: 1px solid #D0A459;
+     background-color: #171717;
+     color: #fff;
+     padding-top: 19px;
+     padding-right: 34px;
+     padding-bottom: 19px;
+     padding-left: 34px;
+ }
+
+ .btnDark {
+     border: 1px solid #FFFFFF;
+     background: #F8A71D;
+     color: #000000;
+     padding-top: 19px;
+     padding-right: 27px;
+     padding-bottom: 19px;
+     padding-left: 27px;
+ }
+
+ .btnOutline:active,
+ .btnOutline:hover,
+ .btnDark:active,
+ .btnDark:hover {
+     border-color: #fff;
+ }
+
+ .footer {
+     padding-top: 93px;
+     padding-bottom: 173px;
+     background: url('/assets/images/footerBg.png');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-color: #000000;
+     color: #fff;
+ }
+
+ .footer h5 {
+     font-weight: 400;
+     font-size: 25px;
+     line-height: 100%;
+     letter-spacing: normal;
+     margin-bottom: 11px;
+ }
+
+ .footer .nav-link {
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 24px;
+     letter-spacing: 2%;
+ }
+
+
+ /* buttons end */
+ /*.heroContainer {
+    max-width: 1384px;
+    margin: 0 auto;
+}
+.heroBanner {
+    background-image: url(../images/heroBanner.png);
+    height: 100vh;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.rightGlow {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-image: url(../images/rightYellowGlow.svg);
+}
+.leftGlow {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-image: url(../images/leftYellowGlow.svg);
+}
+ */
+
+
+ @media (min-width: 1400px) {
+     .rpContainer {
+         max-width: 1400px;
+         margin-left: auto;
+         margin-right: auto;
+         padding-left: 1rem;
+         padding-right: 1rem;
+         flex-wrap: inherit;
+         align-items: center;
+         justify-content: space-between;
+     }
+ }
