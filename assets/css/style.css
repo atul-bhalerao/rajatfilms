@@ -124,7 +124,7 @@ color: #F8A71D;
  .heroVideo {
      width: 1162px;
      max-height: 595px;
-     background-image: url('/assets/images/videobg.jpg');
+     background-image: url('../images/videobg.jpg');
      border-radius: 18px;
      border: 1.5px solid #D0A459;
      box-shadow:
@@ -152,7 +152,7 @@ color: #F8A71D;
  .bio .bioImg {
      width: 50%;
      height: 624px;
-     background-image: url('/assets/images/RajatPatel.png');
+     background-image: url('../images/RajatPatel.png');
      border-radius: 18px;
      border-width: 1.5px;
      border: 1.5px solid #D0A459;
@@ -186,7 +186,7 @@ color: #F8A71D;
      padding: 95px 0;
      background:
          linear-gradient(178.53deg, #101010 1.48%, rgba(28, 28, 29, 0) 110.87%),
-         url('/assets/images/awardBg.png');
+         url('../images/awardBg.png');
      background-size: cover;
      background-position: center;
      background-repeat: no-repeat;
@@ -270,7 +270,7 @@ color: #F8A71D;
  .footer {
      padding-top: 93px;
      padding-bottom: 173px;
-     background: url('/assets/images/footerBg.png');
+     background: url('../images/footerBg.png');
      background-size: cover;
      background-position: center;
      background-repeat: no-repeat;
