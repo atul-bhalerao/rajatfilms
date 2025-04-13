@@ -63,7 +63,12 @@ color: #F8A71D;
      font-weight: 400;
 
  }
-
+ /* Container */
+ @media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1360px;
+    }
+ }
  /* nav start */
  nav {
      flex-direction: row;
@@ -116,7 +121,7 @@ color: #F8A71D;
 
  /* hero banner */
  .heroBanner {
-     padding-top: 244px;
+     padding-top: 354px;
      padding-bottom: 150px;
      margin-top: 85px;
  }
