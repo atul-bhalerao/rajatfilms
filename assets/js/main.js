@@ -5,7 +5,8 @@ $(document).ready(function () {
       centerMode: true,
       variableWidth: true,
       arrows: true,
-      slidesToShow: 4, // With variableWidth, this is ignored
+      slidesToShow: 1, // required but overridden by variableWidth
+      initialSlide: 2, // ensure centering works better
       responsive: [
         {
           breakpoint: 768,
@@ -13,7 +14,7 @@ $(document).ready(function () {
             arrows: true,
             centerMode: true,
             variableWidth: true,
-            slidesToShow: 4
+            slidesToShow: 1
           }
         },
         {
@@ -22,7 +23,7 @@ $(document).ready(function () {
             arrows: true,
             centerMode: true,
             variableWidth: true,
-            slidesToShow: 3
+            slidesToShow: 1
           }
         }
       ]
