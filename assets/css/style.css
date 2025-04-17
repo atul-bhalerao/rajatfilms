@@ -245,30 +245,97 @@ color: #F8A71D;
 /* project start */
 .project{
     padding-top: 130px;
-    padding-bottom: 60px;
+    padding-bottom: 160px;
+    overflow: auto;
+    width: 100%;
+    margin: 0 auto;
 }
 .projectWrap{
     margin-top: 50px;
+}
+.projectSlider{
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    
 }
-.projectCard{
-    width: 328px;
+.projectCard.slick-slide{
+    width: 328px; 
     height: 561px;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+    opacity: 0.6;
+    transform: scale(0.95);
     border-radius: 18px;
     border-width: 1px;
     border: 1px solid #F8A71D;
     overflow: hidden;
     align-content: center;
     display: flex;
+    margin: 0 30px;
 }
-.projectCard:active{
-    box-shadow:
-        0px -2.05px 0px 0px #E6CD7804,
-        0px 1.82px 0.34px 0px #E6CD780A,
-        0px 10.46px 14.9px 0px #E6CD7815,
-        0px 17px 75px 0px #E6CD7829;
+.projectCard.slick-slide.slick-current.slick-active.slick-center{
+    box-shadow: 0px 1.27px 4.31px 0px #F8A71D0B,
+    0px 3.06px 9.51px 0px #F8A71D10,
+    0px 5.76px 16.46px 0px #F8A71D14,
+    0px 10.27px 27.13px 0px #F8A71D18,
+    0px 19.22px 47.17px 0px #F8A71D1D,
+    0px 46px 106px 0px #F8A71D29;
+}
+/* Customize previous and next arrows */
+/* Base arrow styles */
+.projectSlider .slick-center {
+    opacity: 1;
+    transform: scale(1);
+  }
+.projectSlider .slick-list.draggable{
+    padding: 0 50px 90px 50px !important;
+}
+.projectSlider .slick-prev, .projectSlider .slick-next {
+    width: 50px;
+    height: 50px;
+    background-color: #FFD700; /* Yellow background */
+    border-radius: 50%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  /* Remove default arrow content */
+  .projectSlider .slick-prev::before,
+  .projectSlider .slick-next::before {
+    content: ''; /* Clear default */
+  }
+  
+  /* Use a simple white arrow as content */
+  .projectSlider .slick-prev::after,
+  .projectSlider .slick-next::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    padding: 4px;
+  }
+  
+  /* Rotate to get proper directions */
+  .projectSlider .slick-prev::after {
+    transform: rotate(135deg);
+  }
+  
+  .slick-next::after {
+    transform: rotate(-45deg);
+  }
+ .projectSlider .slick-prev, .projectSlider .slick-next{
+    top: unset;
+    bottom: -20%;
+}
+.projectSlider .slick-next{
+    right: 46%;
+}
+.projectSlider .slick-prev{
+    left: 46%;
 }
 /* project end */
 
