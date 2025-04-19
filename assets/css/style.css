@@ -23,6 +23,7 @@ h3,
 h4,
 h5 {
     color: #F8A71D;
+    font-weight: 700;
 }
 
 h1 {
@@ -172,7 +173,7 @@ nav {
     overflow: hidden;
 }
 
-.heroBanner h1 {
+.heroBanner h3 {
     margin-bottom: 14px;
 }
 
@@ -307,10 +308,107 @@ nav {
    margin: 0 10px !important;
 }
 
+/* awardBg.png */
+.trustedby {
+   overflow: hidden;
+   background-image: url(../images/awardBg.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   height: 375px;
+   padding-top: 89px;
+}
+.trustedby h3 {
+   margin-bottom: 86px;
+   font-weight: 700;
+}
 /* the parent */
 .projects .slick-list {
    margin: 0 -15px !important;
 }
+
+
+/* blog */
+.blog {
+   position: relative;
+}
+.blog h3 {
+   margin-bottom: 50px;
+}
+.blog .slick-arrow {
+   height: 50px;
+   width: 50px;
+   font-size: 0 ;
+   position: absolute;
+   bottom: 50%;
+   border-radius: 50%;
+   background-color: #F8A71D;
+   border: 0;
+}
+.blog .slick-prev {
+   left: -50px;
+   background-image: url(../images/leftArrow.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+.blog .slick-next {
+   right: -50px;
+   background-image: url(../images/rightArrow.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+.blog .slick-disabled {
+   background-color: #aaa !important;
+}
+.blog .blogCut {
+   height: 497px;
+   /* width: 385px; */
+   border-radius: 18px;
+   margin-left: 16px;
+   margin-right: 16px;
+   border: 1px solid #F8A71D;
+   position: relative;
+   overflow: hidden;
+}
+.blog .blogCut h4 {
+   position: absolute;
+   bottom: 25px;
+   left: 25px;
+   z-index: 2;
+   color: #fff;
+   font-family: "Roboto", sans-serif;
+   font-weight: 400;
+}
+.blog .blogCut:after {
+   content: '';
+   position: absolute;
+   /* Rectangle 33 */
+left: 0;
+top: 0;
+bottom: 0;
+right: 0;
+
+background: linear-gradient(180deg, rgba(65, 65, 65, 0) 0%, rgba(57, 44, 20, 0.7) 100%);
+border-radius: 18px;
+
+}
+.blog .blogCut a {
+   position: absolute;
+   height: 20px;
+   width: 20px;
+   background-color: #F8A71D;
+   border-radius: 50px;
+   display: block;
+   bottom: 25px;
+   right: 25px;
+   background-image: url(../images/rightArrow.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 50%;
+   padding: 14px;
+   z-index: 2;
+   
+}
+
 /* buttons start */
 .btn {
     font-weight: 400;
