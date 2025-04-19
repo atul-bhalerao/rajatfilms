@@ -102,6 +102,9 @@ nav {
     width: 200px;
     height: 85px;
 }
+.footer-brand {
+   display: block;
+}
 
 .navbar-nav {
     margin-left: 160px;
@@ -308,7 +311,21 @@ nav {
    margin: 0 10px !important;
 }
 
+
 /* awardBg.png */
+.trustedby ul {
+   display: flex;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.trustedby ul li {
+   margin: 0 15px;
+   display: block;
+   height: 56px;
+}
 .trustedby {
    overflow: hidden;
    background-image: url(../images/awardBg.png);
@@ -408,7 +425,15 @@ border-radius: 18px;
    z-index: 2;
    
 }
+.form-label {
+   font-size: 16px;
+   font-weight: 500;
+   line-height: normal;
+}
+.modal .form-label {
+   color: #000;
 
+}
 /* buttons start */
 .btn {
     font-weight: 400;
@@ -468,7 +493,7 @@ border-radius: 18px;
     font-size: 25px;
     line-height: 100%;
     letter-spacing: normal;
-    margin-bottom: 11px;
+    margin-bottom: 20px;
 }
 
 .footer .nav-link {
@@ -478,6 +503,9 @@ border-radius: 18px;
     letter-spacing: 2%;
 }
 
+.contact span {
+   padding-right: 10px;
+}
 
 /* buttons end */
 /*.heroContainer {
