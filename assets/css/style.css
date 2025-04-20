@@ -583,6 +583,9 @@ border-radius: 18px;
 }
 
 @media (max-width: 992px) {
+    h3 {
+        font-size: 42px;
+    }
    .navbar-brand img {
        max-width: 150px;
        height: auto;
@@ -616,10 +619,10 @@ border-radius: 18px;
        margin: 0 auto;
    }
    .projectSlider .slick-next {
-       right: 37%;
+       right: 10%;
    }
    .projectSlider .slick-prev {
-       left: 37%;
+       left: 10%;
    }
    .navbar-nav .nav-item .nav-link {
        padding: 15px 0 !important;
