@@ -164,8 +164,8 @@ nav {
 }
 
 .heroVideo {
-    width: 1162px;
-    max-height: 595px;
+    width: 100%;
+    /* max-height: 595px; */
     background-image: url('../images/videobg.jpg');
     border-radius: 18px;
     border: 1.5px solid #D0A459;
@@ -207,7 +207,7 @@ nav {
 .bio .bioContent {
     width: 50%;
     margin-left: 152px;
-    margin-top: 63px;
+    /* margin-top: 63px; */
 }
 
 .bio .cta .btn {
@@ -279,7 +279,7 @@ nav {
    border: 1px solid #F8A71D;
 }
 .projectSlider {
-   margin-bottom: 180px;
+   margin-bottom: 100px;
 }
 .projectSlider .slick-arrow {
    height: 50px;
@@ -308,7 +308,8 @@ nav {
 }
 /* the slides */
 .projects .slick-slide {
-   margin: 0 10px !important;
+    margin: 0 15px !important;
+    max-width: 328px !important;
 }
 
 
@@ -570,6 +571,9 @@ border-radius: 18px;
    right: 0;
  }
 @media (min-width: 1400px) {
+    .rpContainer.hero {
+        max-width: 100%;
+    }
     .rpContainer {
         max-width: 1400px;
         margin-left: auto;
